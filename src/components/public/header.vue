@@ -90,7 +90,7 @@ export default{
       this.$http.get('./static/kbtjson.json').then((response) => {
         console.log(response)
       }, (reponse) => {
-        console.log('错误')
+        alert('数据请求失败')
       })
     }
   }
@@ -129,6 +129,7 @@ export default{
 	width:100%;
 	position: absolute;
 	right:0;top:1.2rem;
+	z-index: 999;
 }
 .kbt_menu .el-menu--dark, .el-submenu{
 	background: #435e9a;
