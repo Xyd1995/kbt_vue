@@ -1,6 +1,6 @@
 <template>
 	<div id="kbtHome">
-		<div class="swiper-container">
+		<div class="swiper-container" style="height: 4.5rem;">
 	    	<div class="swiper-wrapper">
 	        	<div class="swiper-slide">
 	        		<img src="../../assets/img/banner_01.jpg"/>
@@ -129,12 +129,8 @@
 			  	</div>
 			  </el-col>
 		</el-row>
-		<ul class="kbthome-tab">
-			<li><router-link to="/news" :class="{kbtTbaStyle: kbt}" @click.native="kbtTab">News & Events</router-link></li><!--
-		--><li class="kbtilline">/</li><!--
-		--><li><router-link to="/products" :class="{kbtTbaStyle: kbt1}" @click.native="kbtTab">Featureproducts</router-link></li>
-		</ul>
 		<router-view></router-view>
+		<h1>123123</h1>
 	</div>
 </template>
 
@@ -204,7 +200,6 @@ export default {
 	background:url('../../assets/img/kbtshow_07.jpg') no-repeat center;
 	background-size:cover;
 }
-
 .swiper-slide{
 	height:2.56rem;
 }
@@ -228,9 +223,6 @@ export default {
 	color:#fff;
 	line-height:.32rem;
 	word-break:break-word;
-}
-.swiper-container{
-	height:4.5rem;
 }
 .kbtIndustry{
 	background:rgba(58,80,132,.8);

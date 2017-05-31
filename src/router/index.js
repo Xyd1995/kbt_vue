@@ -3,8 +3,6 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const UserHome = { template: '<div>13123123</div>' }
-
 const router = new Router({
   routes: [
     {
@@ -12,9 +10,11 @@ const router = new Router({
       component: require('../components/home/home.vue'),
       alias: '/',
       children: [
-        {path: '', component: require('../components/home/news')},
-        {path: 'news', component: require('../components/home/news')},
-        {path: 'products', component: require('../components/home/products')}
+        {
+          path: 'kbt-show',
+          component: require('../components/home/homeShow'),
+          alias: '/'
+        }
       ]
     }
   ]

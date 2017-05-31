@@ -20,3 +20,6 @@ button{border:none;outline: none;background:none;}
    fill: currentColor;
    overflow: hidden;
 }
+.clear{
+	clear:both;
+}
