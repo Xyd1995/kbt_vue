@@ -7,7 +7,7 @@ const router = new Router({
   routes: [
     {
       path: '/home',
-      component: require('../components/home/home.vue'),
+      component: require('../components/home/home'),
       alias: '/',
       children: [
         {

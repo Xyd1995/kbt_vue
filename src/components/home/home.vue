@@ -41,7 +41,7 @@
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_02">
 			  		<div class="kbtIndustry">
-			  			<h1>Microelectronics</h1>
+			  			<h1>Pharmaceutical</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -56,7 +56,7 @@
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_03">
 			  		<div class="kbtIndustry">
-			  			<h1>Microelectronics</h1>
+			  			<h1>Industrial</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -71,7 +71,7 @@
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_04">
 			  		<div class="kbtIndustry">
-			  			<h1>Microelectronics</h1>
+			  			<h1>Food & Beveage</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -86,7 +86,7 @@
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_05">
 			  		<div class="kbtIndustry">
-			  			<h1>Microelectronics</h1>
+			  			<h1>Medical</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -101,7 +101,7 @@
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_06">
 			  		<div class="kbtIndustry">
-			  			<h1>Microelectronics</h1>
+			  			<h1>Filter Housing</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -116,7 +116,7 @@
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_07">
 			  		<div class="kbtIndustry">
-			  			<h1>Microelectronics</h1>
+			  			<h1 v-on:click="tanchu(1)" data-canshu="2">Laboratory</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -145,8 +145,6 @@
 export default {
   data () {
     return {
-      kbt: true,
-      kbt1: false
     }
   },
   mounted () {
@@ -157,9 +155,10 @@ export default {
     })
   },
   methods: {
-    kbtTab: function () {
-      this.kbt = !this.kbt
-      this.kbt1 = !this.kbt1
+    tanchu: function (cans) {
+      if (cans === 1) {
+        alert(1)
+      }
     }
   }
 }
@@ -175,6 +174,7 @@ export default {
 	height:1.74rem;
 	border:1px #eaf0fb solid;
 	margin-bottom:.16rem;
+	overflow: hidden;
 }
 .kbtshow_01{
 	background:url('../../assets/img/kbtshow_01.jpg') no-repeat center;
@@ -218,7 +218,7 @@ export default {
 	position: absolute;
 	width:93.4%;
 	left:0;
-	bottom:-1.9rem;
+	bottom:-1.5rem;
 	background:rgba(60,82,136,.8);	
 	padding:.25rem;
 }
@@ -236,6 +236,11 @@ export default {
 	padding:.04rem .18rem;
 	height:100%;
 	position: relative;
+	margin-top:1.3rem;
+	overflow: hidden;
+}
+.kbtshow_02 .kbtIndustry{
+	margin-top:3.25rem;
 }
 .kbtIndustry h1{
 	font-size:.24rem;
@@ -250,7 +255,7 @@ export default {
 	display: block;
 	font-family: arial;
 	color:#fff;
-	font-size:.12rem;
+	font-size:.2rem;
 }
 .kbtIndustry .kbtIndustryUrl{
 	display: block;

@@ -90,7 +90,7 @@ export default{
       this.$http.get('./static/kbtjson.json').then((response) => {
         console.log(response)
       }, (reponse) => {
-        alert('数据请求失败')
+        console.log('数据请求失败')
       })
     }
   }
