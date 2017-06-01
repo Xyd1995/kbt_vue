@@ -2,6 +2,7 @@
   <div id="app">
   		<kbtheader></kbtheader>
   		<router-view></router-view>
+  		<kbtFooter></kbtFooter>
   </div>
 </template>
 

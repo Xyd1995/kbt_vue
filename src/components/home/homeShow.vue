@@ -2,23 +2,15 @@
 	<div id="kbtShow">
 		<div class="swiper-container">			
 			<div class="kbtshow-Page">
-				<div id="News" :class="{kbtshow_page_color: test}">News & Events</div><!--
+				<div id="News" :class="{kbtshow_page_color: swiperBaclk1}">News & Events</div><!--
 				--><span>/</span><!--
-				--><div id="Feadture">Feature Products</div>
+				--><div id="Feadture" :class="{kbtshow_page_color: swiperBaclk2}">Feature Products</div>
 			</div>
 	    	<div class="swiper-wrapper">
 	        	<div class="swiper-slide">
 	        		<div class="kbtshow-homeNews">
 	        			<div v-for="(item, index) in mode" :key="item" :class="{kbtshowBg: item.kbtshowBg}">
 	        				<div class="kbtshow-news">
-			        			<!--<div class="kbtshow-text">
-			        				<h1>Cobetter Sterilizing Grade Filter Cartridges DMF Acknowledged by the FDA</h1>
-			        			 	<h6>2017-04-26</h6>
-			        				<p>Cobetter Sterilizing Grade Filter Cartridges are now listed in DMF (Class II DMF Number 031365) which means that they comply with U.S. FDA requirements with the potential to help pharmaceutical customers with New Drug Applications.</p>
-			        			</div>
-			        			<div class="kbtshow-img">
-			        				<img src="../../assets/img/kbtshow-news-02.png" />
-			        			</div>-->
 			        			<div class="kbtshow-text">
 			        				<h1>{{item.title}}</h1>
 			        			 	<h6>{{item.time}}</h6>
@@ -30,6 +22,7 @@
 			        			<div style="clear:both"></div>
 	        				</div>
 	        			</div>
+	        			<a class="kbtshowUrl">Load more News</a>
 	        		</div>
 	        	</div>
 	        	<div class="swiper-slide">
@@ -51,6 +44,7 @@
 	        					<img :src="item.productsImg" />
 	        				</li>
 	        			</ul>
+	        			<a class="kbtshowUrl">Load more products</a>
 	        		</div>
 	        	</div>
 	    	</div>
@@ -83,8 +77,8 @@
             {name: 'High Flow Filter Cartridge', productsImg: '../static/img/productsList06.png'}
           ]
         },
-        test: true,
-        txxt: false
+        swiperBaclk1: true,
+        swiperBaclk2: false
       }
     },
     mounted () {
@@ -98,18 +92,21 @@
         paginationClickable: true,
         runCallbacks: true,
         onTouchEnd: function () {
-          console.log(en._data.test)
+          if (mySwiper2[1].activeIndex === 1) {
+            saveVue._data.swiperBaclk1 = false
+            saveVue._data.swiperBaclk2 = true
+          } else if (mySwiper2[1].activeIndex === 2) {
+            saveVue._data.swiperBaclk1 = true
+            saveVue._data.swiperBaclk2 = false
+          }
         }
       })
-      var en = this
+      var saveVue = this
     }
   }
 </script>
 
 <style>
-#kbtShow{
-	/*padding:0 .29rem;*/
-}
 .kbtshow-homeNews{
 	padding:0 .29rem;
 }
@@ -152,6 +149,16 @@
 .kbtshow-news .kbtshow-img{
 	float:left;
 	width:1.72rem;
+}
+.kbtshowUrl{
+	display:inline-block;
+	padding:0 .12rem;
+	background:#1a4899;
+	font:.2rem/.3rem arial;
+	color:#fff;
+	float:right;
+	border:1px #ccc solid;
+	margin-top:8px;
 }
 .kbtshowBg{
 	background:#f8f8f8;
@@ -218,7 +225,7 @@
 }
 /*分业按钮修改*/
 #kbtShow .swiper-container{
-	padding-bottom:.66rem;
+	padding-bottom:.80rem;
 }
 #kbtShow .swiper-pagination-bullet{
 	width:1.03rem;

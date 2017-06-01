@@ -130,7 +130,14 @@
 			  </el-col>
 		</el-row>
 		<router-view></router-view>
-		<h1>123123</h1>
+		<div class="kbtHome-advertising">
+			<div class="kbtHome-advertising-images">
+				<img src="../../../static/img/advertising.png" />
+			</div>
+			<p class="kbtHome-advertising-txt">
+				Over 1200 technical analysis reports for customers in the pharmaceutical industry and 1300 technical analysis reports for customers in electronics, chemical, and life science industries annually. 
+			</p>
+		</div>
 	</div>
 </template>
 
@@ -282,5 +289,21 @@ export default {
 }
 .kbtilline{
 	margin:0 .06rem;
+}
+/*广告*/
+.kbtHome-advertising-images{
+	width:100%;
+	height:2.74rem;
+}
+.kbtHome-advertising-images img{
+	display:block;
+	width:100%;height:100%;
+}
+.kbtHome-advertising-txt{
+	padding:.19rem .35rem;
+	font:.3rem/.4rem arial;
+	color:#fff;
+	background:url(../../../static/img/bg.jpg) repeat-x;
+	word-wrap: break-word;
 }
 </style>
