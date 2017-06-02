@@ -25,8 +25,8 @@
 	    <el-row :gutter="4" class="kbtCentet">
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_01">
-			  		<div class="kbtIndustry">
-			  			<h1>Microelectronics</h1>
+			  		<div class="kbtIndustry" :class="{mobile_top:section=='g'}">
+			  			<h1 v-on:click="test('g')">Microelectronics</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -40,8 +40,8 @@
 			  </el-col>
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_02">
-			  		<div class="kbtIndustry">
-			  			<h1>Pharmaceutical</h1>
+			  		<div class="kbtIndustry" :class="{mobile_top:section=='f'}">
+			  			<h1 @click="test('f')">Pharmaceutical</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -55,8 +55,8 @@
 			  </el-col>
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_03">
-			  		<div class="kbtIndustry">
-			  			<h1>Industrial</h1>
+			  		<div class="kbtIndustry" :class="{mobile_top:section=='e'}">
+			  			<h1 @click="test('e')">Industrial</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -70,8 +70,8 @@
 			  </el-col>
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_04">
-			  		<div class="kbtIndustry">
-			  			<h1>Food & Beveage</h1>
+			  		<div class="kbtIndustry" :class="{mobile_top:section=='d'}">
+			  			<h1 @click="test('d')">Food & Beveage</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -85,8 +85,8 @@
 			  </el-col>
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_05">
-			  		<div class="kbtIndustry">
-			  			<h1>Medical</h1>
+			  		<div  class="kbtIndustry" :class="{mobile_top:section=='c'}">
+			  			<h1 @click="test('c')">Medical</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -100,8 +100,8 @@
 			  </el-col>
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_06">
-			  		<div class="kbtIndustry">
-			  			<h1>Filter Housing</h1>
+			  		<div class="kbtIndustry" :class="{mobile_top:section=='b'}">
+			  			<h1 @click="test('b')">Filter Housing</h1>
 			  			<ul>
 			  				<li><a href="#">- CMP Filtration</a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
@@ -115,17 +115,17 @@
 			  </el-col>
 			  <el-col :sm="4" :span="12">
 			  	<div class="grid-content bg-purple kbtshow_07">
-			  		<div class="kbtIndustry">
-			  			<h1 v-on:click="tanchu(1)" data-canshu="2">Laboratory</h1>
+			  		<div class="kbtIndustry" :class="{mobile_top:section=='a'}">
+			  			<h1 @click="test('a')">Laboratory</h1>
 			  			<ul>
-			  				<li><a href="#">- CMP Filtration</a></li>
+			  				<li><a href="#"></a></li>
 			  				<li><a href="#">- FPD Wet Process</a></li>
 			  				<li><a href="#">- Electronics Chemicals</a></li>
 			  				<li><a href="#">- Hard Disk</a></li>
 			  				<li><a href="#">- HBLED</a></li>
 			  			</ul>
 			  			<a href="#" class="kbtIndustryUrl">+ More</a>
-			  		</div>
+			  		</div>			  		
 			  	</div>
 			  </el-col>
 		</el-row>
@@ -145,6 +145,7 @@
 export default {
   data () {
     return {
+      section: ''
     }
   },
   mounted () {
@@ -155,9 +156,11 @@ export default {
     })
   },
   methods: {
-    tanchu: function (cans) {
-      if (cans === 1) {
-        alert(1)
+    test: function (section) {
+      if (this.section !== section) {
+        this.section = section
+      } else if (this.section === section) {
+        this.section = ''
       }
     }
   }
@@ -237,7 +240,8 @@ export default {
 	height:100%;
 	position: relative;
 	margin-top:1.3rem;
-	overflow: hidden;
+	overflow: hidden;	
+	transition: all 1s;
 }
 .kbtshow_02 .kbtIndustry{
 	margin-top:3.25rem;

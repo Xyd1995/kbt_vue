@@ -111,7 +111,7 @@
 	padding:0 .29rem;
 }
 .kbtshow-news{
-	padding:0 .2rem;
+	padding:.2rem .2rem;
 }
 .kbtshow-products{
 	padding:0 .29rem;
@@ -163,7 +163,6 @@
 .kbtshowBg{
 	background:#f8f8f8;
 	border-bottom:2px #f2f2f2 solid;
-	margin-bottom:.25rem;
 }
 .kbtshow-products-Featured{
 	border:1px #e4e4e4 solid;

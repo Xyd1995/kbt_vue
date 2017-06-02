@@ -8,7 +8,7 @@
 	animation: slide-out 1s;
 }
 
-
+/* 导航栏动画 */
 @-webkit-keyframes slide-in{
 	0%{
 		-webkit-transform: translateX(-100%);
@@ -51,7 +51,7 @@
 		}
 	100%{
 		-webkit-transform: translateX(-100%);
-		-transform: translateX(-100%);
+		transform: translateX(-100%);
 		opacity: 0;
 		display: none;
 	}
@@ -64,7 +64,16 @@
 		}
 	100%{
 		-webkit-transform: translateX(-100%);
-		-transform: translateX(-100%);
+		transform: translateX(-100%);
 		opacity: 0;
 	}
+}
+
+/* mobile css*/
+.kbtCentet .mobile_top{
+	margin-top: 0;
+}
+.mobile_bottom{
+	transition: all .5s;
+	margin-top:1.3rem;
 }

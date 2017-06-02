@@ -39,7 +39,7 @@
 	position: relative;
 }
 .kbt-footer {
-	width:4.3rem;
+	width:5rem;
 }
 .kbt-footer img{
 	width:1.86rem;
