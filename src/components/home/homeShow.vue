@@ -66,15 +66,15 @@
           sell: {
             title: 'Activated Carbon CSD-C Lenticular Filter Series',
             description: 'Cobetter CSD-C® Lenticular Filter Series adds activated carbon to the wood fiber.  It is suitable for industries that need',
-            URLImg: '../static/img/productsListBan.png'
+            URLImg: '/static/img/productsListBan.png'
           },
           ProductsList: [
-            {name: 'High Flow Filter Cartridge', productsImg: '../static/img/productsList01.png'},
-            {name: 'High Flow Filter Cartridge', productsImg: '../static/img/productsList02.png'},
-            {name: 'H-FRP Housing', productsImg: '../static/img/productsList03.png', sellStyel: true},
-            {name: 'H-FRP Housing', productsImg: '../static/img/productsList04.png', sellStyel: true},
-            {name: 'High Flow Filter Cartridge', productsImg: '../static/img/productsList05.png'},
-            {name: 'High Flow Filter Cartridge', productsImg: '../static/img/productsList06.png'}
+            {name: 'High Flow Filter Cartridge', productsImg: '/static/img/productsList01.png'},
+            {name: 'High Flow Filter Cartridge', productsImg: '/static/img/productsList02.png'},
+            {name: 'H-FRP Housing', productsImg: '/static/img/productsList03.png', sellStyel: true},
+            {name: 'H-FRP Housing', productsImg: '/static/img/productsList04.png', sellStyel: true},
+            {name: 'High Flow Filter Cartridge', productsImg: '/static/img/productsList05.png'},
+            {name: 'High Flow Filter Cartridge', productsImg: '/static/img/productsList06.png'}
           ]
         },
         swiperBaclk1: true,
