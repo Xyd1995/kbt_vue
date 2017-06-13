@@ -4,7 +4,6 @@
 			<img src="../../../static/img/kbtFooter-logo.jpg"/>
 			<div class="kbt-footer-address">
 				<h1>Hangzhou Cobetter Filtration Equipment Co.,Ltd</h1>
-				<p>Hangzhou Cobetter Filtration Equipment Co.,Ltd</p>
 				<p>Email   sales@cobetterfilter.com</p>
 			</div>
 			<div class="kbt-footer-address" >

@@ -16,6 +16,20 @@ const router = new Router({
           alias: '/'
         }
       ]
+    },
+    {
+      path: '/column',
+      name: 'column',
+      component: require('../components/column/column')
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: require('../components/column/abouts')
+    },
+    {
+      path: '/columnProducts',
+      component: require('../components/products/columnProducts')
     }
   ]
 })

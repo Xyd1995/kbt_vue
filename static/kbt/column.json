@@ -1,0 +1,59 @@
+{
+  "columnImgUrl": "/static/img/column-fileChemical.png",
+  "columnList": [
+  	{
+  		"listAfterIcon": "/static/img/column-FineIcon-01.png",
+  		"listBerterIocn": "/static/img/column-FineIconAfter-01.png",
+  		"listTitle": "Energy and Chemical Industry",
+  		"listColumn": [
+  			"- Metal Filters",
+  			"- Liquid Filtration",
+  			"- Gas Filtration",
+  			"- Liquid-Liquid Coalescence Separation",
+  			"- Liquid-Gas Coalescence Separation"
+  		]
+  	},
+  	{
+  		"listAfterIcon": "/static/img/column-FineIcon-02.png",
+  		"listBerterIocn": "/static/img/column-FineIconAfter-02.png",
+  		"listTitle": "Fine Chemical Industry",
+  		"listColumn": [
+  			"- Gas Filtration",
+  			"- Capsules and Disc",
+  			"- Gas Filtration",
+  			"- Capsules and Disc",
+  			"- Optical Lenses"
+  		]
+  	},
+  	{
+  		"listAfterIcon": "/static/img/column-FineIcon-03.png",
+  		"listBerterIocn": "/static/img/column-FineIconAfter-03.png",
+  		"listTitle": "Hydraulic and Lubricating System",
+  		"listColumn": [
+  			"- Hydraulic and Lubricating System",
+  			"- High Cleanliness Oil Filtration",
+  			"- Rolling Oil Backwash Filtration",
+  			"- Oil Contamination Detectiony"
+  		]
+  	},
+  	{
+  		"listAfterIcon": "/static/img/column-FineIcon-04.png",
+  		"listBerterIocn": "/static/img/column-FineIconAfter-04.png",
+  		"listTitle": "Water Treatment",
+  		"listColumn": [
+  			"- Sea Water Desalination",
+  			"- Waste Water Treatment",
+  			"- Water Treatment for Industrial Water",
+  			"- Inline Cleaning System"
+  		]
+  	},
+  	{
+  		"listAfterIcon": "/static/img/column-FineIcon-05.png",
+  		"listBerterIocn": "/static/img/column-FineIconAfter-05.png",
+  		"listTitle": "Machinery and Equipment",
+  		"listColumn": [
+  			"- Machinery and Equipment"
+  		]
+  	}
+  ]
+}

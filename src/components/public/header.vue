@@ -1,7 +1,7 @@
 <template>
 	<div id="kbt-header">
 		<div class="cobetterLogo">
-			<img src="../../assets/img/cobetterLogo.png" />
+			<router-link to="/home"><img src="../../assets/img/cobetterLogo.png" /></router-link>
 		</div>
 		<div class="cobetterNav">
 			<el-button type="white" icon="search" @click="getKbt"></el-button>
@@ -55,7 +55,9 @@
 							    	<template slot="title">Microelectronics</template>
 							    </el-submenu>
 							    <el-submenu index="4">
-							    	<template slot="title">Fine Chemiacl</template>
+							    	<template slot="title">
+							    		<router-link to="column">Fine Chemiacl</router-link>
+							    	</template>
 							    </el-submenu>
 							    <el-submenu index="5">
 							    	<template slot="title">Medical</template>
@@ -64,7 +66,9 @@
 							    	<template slot="title">Laboratory</template>
 							    </el-submenu>
 						        <el-menu-item index="9">Last News</el-menu-item>
-						        <el-menu-item index="10">About Us</el-menu-item>
+						        <el-menu-item index="10">
+						        	<router-link to="about">About Us</router-link>
+						        </el-menu-item>
 						        <el-menu-item index="11">Validation Services</el-menu-item>
 						        <el-menu-item index="12">Quality Assurance</el-menu-item>
 						        <el-menu-item index="13">Contact Us</el-menu-item>
