@@ -33,7 +33,7 @@ export default {
   },
   created: function () {
     let _this = this
-    Axios.get('/static/kbt/column.json')
+    Axios.get('/beta/static/kbt/column.json')
       .then(function (response) {
         _this.columnArray = response.data
       })
@@ -76,7 +76,7 @@ export default {
 	background: #fff;
 }
 .colunm-list .colunmlistBgAfter{
-	background:url('/static/img/column-FineIcon01.png')no-repeat center;
+	background:url('/beta/static/img/column-FineIcon01.png')no-repeat center;
 }
 .column-list-columnIcon{
 	float:left;

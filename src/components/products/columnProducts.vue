@@ -1,7 +1,7 @@
 <template>
 	<div id="products">
 		<div class="productsBanner">
-			<img src="static/productsList/img/MetalFiltersBanner.png" />
+			<img src="/beta/static/productsList/img/MetalFiltersBanner.png" />
 		</div>
 		<p class="productsText">
 			Cobetter consistently provides advanced and reliable filtration products for SVP & LVP solutions which results in being the biggest market player in China.
@@ -10,13 +10,13 @@
 			Through our Advanced Validation Center, Cobetter provides the following analytical services including: Bacterial Challenge Test, Contaminant Analysis, Filter Performance Test, Particle Efficiency Analysis and Process Validation.
 		</p>
 		<div class="productsMain">
-			<img src="static/productsList/img/MetalFiltersMain.png"/>
+			<img src="/beta/static/productsList/img/MetalFiltersMain.png"/>
 		</div>
 		<div>
-			<table style="table-collapse:collapse; width:6.7rem;margin: auto;margin-top:.3rem;">
+			<table style="table-collapse:collapse; width:6.9rem;margin: auto;margin-top:.3rem;">
 				<tr>
 					<td ></td>
-					<td style="padding-left:.1rem;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b;">
+					<td style="padding-left:.3rem;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b;">
 						Low<br>Concentration
 					</td>
 					<td style="font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b;">
@@ -24,8 +24,8 @@
 					</td>
 				</tr>
 				<tr>
-					<td style="padding-left:.1rem;border-top:1px #fff solid ;font:.18rem/.4rem arial;line-height:20px;color:#6b6b6b;" bgcolor="#ececec">Decarbonization<br>Filtration</td>
-					<td style="padding-left:.1rem;border-top:1px #ccc solid;height:1.10rem;">
+					<td style="padding-left:.3rem;border-top:1px #fff solid ;font:.18rem/.4rem arial;line-height:20px;color:#6b6b6b;" bgcolor="#ececec">Decarbonization<br>Filtration</td>
+					<td style="padding-left:.3rem;border-top:1px #ccc solid;height:1.10rem;">
 						<a style="display:block;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b;" href="">TIC Series</a>
 						<a style="display:block;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b;" href="">CSSC Series</a>
 					</td>
@@ -35,8 +35,8 @@
 					</td>
 				</tr>
 				<tr>
-					<td style="padding-left:.1rem;border-top:1px #fff solid ;font:.18rem/.4rem arial;line-height:20px;color:#6b6b6b" bgcolor="#ececec">Prefiltration</td>
-					<td style="padding-left:.1rem;border-top:1px #ccc solid;height:1.10rem;">
+					<td style="padding-left:.3rem;border-top:1px #fff solid ;font:.18rem/.4rem arial;line-height:20px;color:#6b6b6b" bgcolor="#ececec">Prefiltration</td>
+					<td style="padding-left:.3rem;border-top:1px #ccc solid;height:1.10rem;">
 						<a style="display:block;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b;" href="">HPP Series</a>
 						<a style="display:block;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b;" href="">SPSH Series</a>
 					</td>
@@ -46,8 +46,8 @@
 					</td>
 				</tr>
 				<tr>
-					<td style="padding-left:.1rem;border-top:1px #fff solid ;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b" bgcolor="#ececec">Final Sterile<br>Filtration</td>
-					<td style="padding-left:.1rem;border-top:1px #ccc solid;height:1.10rem;">
+					<td style="padding-left:.3rem;border-top:1px #fff solid ;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b" bgcolor="#ececec">Final Sterile<br>Filtration</td>
+					<td style="padding-left:.3rem;border-top:1px #ccc solid;height:1.10rem;">
 						<a style="display:block;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b;" href="">SPSH Series</a>
 						<a style="display:block;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b;" href="">APS Series</a>
 					</td>
@@ -57,8 +57,8 @@
 					</td>
 				</tr>
 				<tr>
-					<td style="padding-left:.1rem;border-top:1px #fff solid ;border-bottom:1px #fff solid ;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b" bgcolor="#ececec">Vent Filtration</td>
-					<td style="padding-left:.1rem;border-bottom:1px #ccc solid ;border-top:1px #ccc solid;height:1.10rem;">
+					<td style="padding-left:.3rem;border-top:1px #fff solid ;border-bottom:1px #fff solid ;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b" bgcolor="#ececec">Vent Filtration</td>
+					<td style="padding-left:.3rem;border-bottom:1px #ccc solid ;border-top:1px #ccc solid;height:1.10rem;">
 						<a style="display:block;font:.18rem/.4rem arial;line-height:.3rem;color:#6b6b6b;" href="">GPFL Series</a>
 					</td>
 					<td style="border-bottom:1px #ccc solid ;border-top:1px #ccc solid;height:1.10rem;">
@@ -70,7 +70,7 @@
 		<ul class="productsList">
 			<li>
 				<div class="productsList-img">
-					<img src="static/productsList/img/MetalFiltersProducts01.png" />
+					<img src="/beta/static/productsList/img/MetalFiltersProducts01.png" />
 				</div>
 				<div class="productsList-text">
 					<h1>PolyFlow Filter Cartridges</h1>
@@ -115,8 +115,8 @@ export default{
 	margin-top:.2rem;
 }
 .productsMain{
-	width:4.85rem;
-	height:2.89rem;	
+	width:6rem;
+	height:3rem;	
 	margin:0 auto;
 	margin-top:.2rem;
 }
@@ -131,8 +131,8 @@ export default{
 }
 .productsList li .productsList-img{
 	display: inline-block;
-	width:1.95rem;
-	height:1.95rem;
+	width:1.9rem;
+	height:1.9rem;
 }
 .productsList-img img{
 	display:block;
@@ -141,7 +141,7 @@ export default{
 }
 .productsList-text{
 	display: inline-block;
-	width:4rem;
+	width:4.6rem;
 	vertical-align:top;
 }
 .productsList-text h1{
@@ -157,7 +157,7 @@ export default{
 	margin-bottom:.1rem;
 }
 .productsList-text p{
-	height:.88rem;
+	height:.86rem;
 	overflow:hidden;
 }
 </style>
