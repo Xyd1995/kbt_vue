@@ -97,7 +97,6 @@
       this.axios.get('http://www.test.com:8181/news').then((response) => {
         if (response.data) {
           this.newsTitle = response.data
-          console.log(this.newsTitle)
         }
       })
     },
