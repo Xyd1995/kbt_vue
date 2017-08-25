@@ -33,7 +33,7 @@ export default {
   },
   created: function () {
     let _this = this
-    Axios.get('/beta/static/kbt/column.json')
+    Axios.get('/static/kbt/column.json')
       .then(function (response) {
         _this.columnArray = response.data
       })

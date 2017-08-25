@@ -1,9 +1,9 @@
 {
-  "columnImgUrl": "/beta/static/img/column-fileChemical.png",
+  "columnImgUrl": "/static/img/column-fileChemical.png",
   "columnList": [
   	{
-  		"listAfterIcon": "/beta/static/img/column-FineIcon-01.png",
-  		"listBerterIocn": "/beta/static/img/column-FineIconAfter-01.png",
+  		"listAfterIcon": "/static/img/column-FineIcon-01.png",
+  		"listBerterIocn": "/static/img/column-FineIconAfter-01.png",
   		"listTitle": "Energy and Chemical Industry",
   		"listColumn": [
   			"- Metal Filters",
@@ -14,8 +14,8 @@
   		]
   	},
   	{
-  		"listAfterIcon": "/beta/static/img/column-FineIcon-02.png",
-  		"listBerterIocn": "/beta/static/img/column-FineIconAfter-02.png",
+  		"listAfterIcon": "/static/img/column-FineIcon-02.png",
+  		"listBerterIocn": "/static/img/column-FineIconAfter-02.png",
   		"listTitle": "Fine Chemical Industry",
   		"listColumn": [
   			"- Gas Filtration",
@@ -26,8 +26,8 @@
   		]
   	},
   	{
-  		"listAfterIcon": "/beta/static/img/column-FineIcon-03.png",
-  		"listBerterIocn": "/beta/static/img/column-FineIconAfter-03.png",
+  		"listAfterIcon": "/static/img/column-FineIcon-03.png",
+  		"listBerterIocn": "/static/img/column-FineIconAfter-03.png",
   		"listTitle": "Hydraulic and Lubricating System",
   		"listColumn": [
   			"- Hydraulic and Lubricating System",
@@ -37,8 +37,8 @@
   		]
   	},
   	{
-  		"listAfterIcon": "/beta/static/img/column-FineIcon-04.png",
-  		"listBerterIocn": "/beta/static/img/column-FineIconAfter-04.png",
+  		"listAfterIcon": "/static/img/column-FineIcon-04.png",
+  		"listBerterIocn": "/static/img/column-FineIconAfter-04.png",
   		"listTitle": "Water Treatment",
   		"listColumn": [
   			"- Sea Water Desalination",
@@ -48,8 +48,8 @@
   		]
   	},
   	{
-  		"listAfterIcon": "/beta/static/img/column-FineIcon-05.png",
-  		"listBerterIocn": "/beta/static/img/column-FineIconAfter-05.png",
+  		"listAfterIcon": "/static/img/column-FineIcon-05.png",
+  		"listBerterIocn": "/static/img/column-FineIconAfter-05.png",
   		"listTitle": "Machinery and Equipment",
   		"listColumn": [
   			"- Machinery and Equipment"

@@ -8,9 +8,9 @@
 			</div>
 			<div class="kbt-footer-address" >
 				<h1>Sales</h1>
-				<p>16/F, Longhe International Building, No.1961,<br>
-				   Jianghui Road, Binjiang District,<br>
-				   Hangzhou 310052, China</p>
+				<p>19/F, Building B, Huanyu Bussiness Center,<br>
+				   No.626 Kejiguan Road,<br>
+				   Binjiang District,Hangzhou 310052,China</p>
 			</div>
 			<div class="kbt-footer-address">
 				<h1>Factory</h1>

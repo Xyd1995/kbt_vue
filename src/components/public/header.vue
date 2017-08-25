@@ -48,30 +48,51 @@
 							        	</div>
 							        </el-submenu>
 							    </el-submenu>
-							    <el-submenu index="2">
+							    <el-submenu index="2" @click="kbt1=!kbt1">
 							    	<template slot="title">Food & Beverage</template>
 							    </el-submenu>
-							    <el-submenu index="3">
+							    <el-submenu index="3" @click="kbt1=!kbt1">
 							    	<template slot="title">Microelectronics</template>
 							    </el-submenu>
-							    <el-submenu index="4">
+							    <el-submenu index="4" @click="kbt1=!kbt1">
 							    	<template slot="title">
 							    		<router-link to="column">Fine Chemiacl</router-link>
 							    	</template>
-							    </el-submenu>
-							    <el-submenu index="5">
+							    </el-submenu>							    
+							    <el-submenu index="5" @click="kbt1=!kbt1">
 							    	<template slot="title">Medical</template>
 							    </el-submenu>
-							    <el-submenu index="6">
+							    <el-submenu index="6" @click="kbt1=!kbt1">
 							    	<template slot="title">Laboratory</template>
 							    </el-submenu>
-						        <el-menu-item index="9">Last News</el-menu-item>
-						        <el-menu-item index="10">
+						        <el-menu-item index="9" @click="kbt1=!kbt1">
+						        	<router-link to="news">
+						        		Last News
+						        	</router-link>
+						        </el-menu-item>
+						        <el-menu-item index="10" @click="kbt1=!kbt1">
 						        	<router-link to="about">About Us</router-link>
 						        </el-menu-item>
-						        <el-menu-item index="11">Validation Services</el-menu-item>
-						        <el-menu-item index="12">Quality Assurance</el-menu-item>
-						        <el-menu-item index="13">Contact Us</el-menu-item>
+						        <el-menu-item index="11" @click="kbt1=!kbt1">
+						        	<router-link to="cnas">
+						        		Validation Services
+						        	</router-link>
+						        </el-menu-item>
+						        <el-menu-item index="12" @click="kbt1=!kbt1">
+						        	<router-link to="qa">
+						        		Quality Assurance
+						        	</router-link>
+						        </el-menu-item>
+						        <el-menu-item index="13" @click="kbt1=!kbt1">
+						        	<router-link to="connect">
+						        		Contact Us
+						        	</router-link>
+						        </el-menu-item>
+						        <el-menu-item index="14" @click="kbt1=!kbt1">
+						        	<router-link to="products">
+						        		Products
+						        	</router-link>
+						        </el-menu-item>
 						</el-menu>
 					</el-col>
 				</el-row>

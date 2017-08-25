@@ -22,7 +22,7 @@
 			        			<div style="clear:both"></div>
 	        				</div>
 	        			</div>
-	        			<a class="kbtshowUrl">Load more News</a>
+	        			<a class="kbtshowUrl">Load more news</a>
 	        		</div>
 	        	</div>
 	        	<div class="swiper-slide">
@@ -47,9 +47,8 @@
 	        			<a class="kbtshowUrl">Load more products</a>
 	        		</div>
 	        	</div>
-	    	</div>
-			
-			<div class="swiper-pagination"></div>
+	    	</div>			
+			<div class="swiper-pagination" style="bottom:8px"></div>
 		</div>
 	</div>
 </template>
@@ -59,22 +58,22 @@
     data () {
       return {
         mode: [
-          {title: 'Cobetter Sterilizing Grade Filter Cartridges DMF Acknowledged by the FDA', time: new Date(), description: 'Cobetter Sterilizing Grade Filter Cartridges are now listed in DMF (Class II DMF Number 031365) which means that they comply with U.S. FDA requirements with the potential to help pharmaceutical customers with New Drug Applications.', urlimg: './static/img/kbtshow-02.png', kbtshowBg: '123'},
-          {title: 'Cobetter 2nm HAPES Filter Improves Semiconductor Fabrication Yield', time: new Date(), description: '14nm nodes required the complete removal of external contaminants during the cleaning process to preserve chip quality.  As the first filtration company in China to manufacture this type of filter, our customers improve their Clean Process efficiencies which results in increased fabrication yields and reduced chemical usage.', urlimg: './static/img/kbtshow-01.png'}
+          {title: 'Cobetter Sterilizing Grade Filter Cartridges DMF Acknowledged by the FDA', time: new Date(), description: 'Cobetter Sterilizing Grade Filter Cartridges are now listed in DMF (Class II DMF Number 031365) which means that they comply with U.S. FDA requirements with the potential to help pharmaceutical customers with New Drug Applications.', urlimg: '/static/img/kbtshow-02.png', kbtshowBg: '123'},
+          {title: 'Cobetter 2nm HAPES Filter Improves Semiconductor Fabrication Yield', time: new Date(), description: '14nm nodes required the complete removal of external contaminants during the cleaning process to preserve chip quality.  As the first filtration company in China to manufacture this type of filter, our customers improve their Clean Process efficiencies which results in increased fabrication yields and reduced chemical usage.', urlimg: '/static/img/kbtshow-01.png'}
         ],
         kbtshow_products: {
           sell: {
             title: 'Activated Carbon CSD-C Lenticular Filter Series',
             description: 'Cobetter CSD-C® Lenticular Filter Series adds activated carbon to the wood fiber.  It is suitable for industries that need',
-            URLImg: '/beta/static/img/productsListBan.png'
+            URLImg: '/static/img/productsListBan.png'
           },
           ProductsList: [
-            {name: 'High Flow Filter Cartridge', productsImg: '/beta/static/img/productsList01.png'},
-            {name: 'High Flow Filter Cartridge', productsImg: '/beta/static/img/productsList02.png'},
-            {name: 'H-FRP Housing', productsImg: '/beta/static/img/productsList03.png', sellStyel: true},
-            {name: 'H-FRP Housing', productsImg: '/beta/static/img/productsList04.png', sellStyel: true},
-            {name: 'High Flow Filter Cartridge', productsImg: '/beta/static/img/productsList05.png'},
-            {name: 'High Flow Filter Cartridge', productsImg: '/beta/static/img/productsList06.png'}
+            {name: 'High Flow Filter Cartridge', productsImg: '/static/img/productsList01.png'},
+            {name: 'High Flow Filter Cartridge', productsImg: '/static/img/productsList02.png'},
+            {name: 'H-FRP Housing', productsImg: '/static/img/productsList03.png', sellStyel: true},
+            {name: 'H-FRP Housing', productsImg: '/static/img/productsList04.png', sellStyel: true},
+            {name: 'High Flow Filter Cartridge', productsImg: '/static/img/productsList05.png'},
+            {name: 'High Flow Filter Cartridge', productsImg: '/static/img/productsList06.png'}
           ]
         },
         swiperBaclk1: true,
@@ -88,6 +87,7 @@
         loop: true,
         width: window.innerWidth,
         autoHeight: true,
+        autoplay: false,
         pagination: '.swiper-pagination',
         paginationClickable: true,
         runCallbacks: true,
@@ -118,7 +118,7 @@
 }
 .kbtshow-news .kbtshow-text{
 	float:left;	
-	width:4.59rem;
+	width:4.2rem;
 	margin-right: .18rem;
 	word-wrap: break-word;
 }
@@ -140,11 +140,13 @@
 .kbtshow-news .kbtshow-text p{
 	margin-top:.08rem;
 	font-family:arial;
-	font-size:.16rem;
+	font-size:.2rem;
 	line-height:.3rem;
 	color:#3e3e3e;
 	margin-bottom:.08rem;
 	word-wrap: break-word;
+	height:1.15rem;
+	overflow:hidden;
 }
 .kbtshow-news .kbtshow-img{
 	float:left;
@@ -157,7 +159,6 @@
 	font:.2rem/.3rem arial;
 	color:#fff;
 	float:right;
-	border:1px #ccc solid;
 	margin-top:8px;
 }
 .kbtshowBg{
@@ -202,7 +203,7 @@
 }
 /*宣传产品列表*/
 .kbtshow-products-sell li{
-	width:3.14rem;
+	width:2.9rem;
 	float:left;
 	padding:.11rem 0.16rem;
 	border-bottom: 1px #e4e4e4 solid;
@@ -238,7 +239,7 @@
 }
 .kbtshow-Page div,span{
 	display: inline-block;
-	font:.28rem/.3rem arial;
+	font:.24rem/.38rem Frutiger LT Std, arial;
 	color:#bfbfbf;	
 }
 .kbtshow-Page span{

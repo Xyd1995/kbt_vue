@@ -1,7 +1,7 @@
 <template>
 	<div id="products">
 		<div class="productsBanner">
-			<img src="/beta/static/productsList/img/MetalFiltersBanner.png" />
+			<img src="/static/productsList/img/MetalFiltersBanner.png" />
 		</div>
 		<p class="productsText">
 			Cobetter consistently provides advanced and reliable filtration products for SVP & LVP solutions which results in being the biggest market player in China.
@@ -10,7 +10,7 @@
 			Through our Advanced Validation Center, Cobetter provides the following analytical services including: Bacterial Challenge Test, Contaminant Analysis, Filter Performance Test, Particle Efficiency Analysis and Process Validation.
 		</p>
 		<div class="productsMain">
-			<img src="/beta/static/productsList/img/MetalFiltersMain.png"/>
+			<img src="/static/productsList/img/MetalFiltersMain.png"/>
 		</div>
 		<div>
 			<table style="table-collapse:collapse; width:6.9rem;margin: auto;margin-top:.3rem;">
@@ -70,7 +70,7 @@
 		<ul class="productsList">
 			<li>
 				<div class="productsList-img">
-					<img src="/beta/static/productsList/img/MetalFiltersProducts01.png" />
+					<img src="/static/productsList/img/MetalFiltersProducts01.png" />
 				</div>
 				<div class="productsList-text">
 					<h1>PolyFlow Filter Cartridges</h1>

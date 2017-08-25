@@ -250,7 +250,7 @@ export default {
 	font-size:.24rem;
 	color:#fff;
 	font-family: arial;
-	line-height:.42rem;
+	line-height:.38rem;
 }
 .kbtIndustry ul li{
 	height:.24rem;
@@ -312,7 +312,7 @@ export default {
 	padding:.19rem .35rem;
 	font:.3rem/.4rem arial;
 	color:#fff;
-	background:url(../../../static/img/bg.jpg) repeat-x;
+	background:url(../../../static/img/bg.png) repeat;
 	word-wrap: break-word;
 }
 </style>

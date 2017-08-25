@@ -4,6 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/home',
@@ -30,8 +31,42 @@ const router = new Router({
     {
       path: '/columnProducts',
       component: require('../components/products/columnProducts')
+    },
+    {
+      path: '/cnas',
+      component: require('../components/column/cnas')
+    },
+    {
+      path: '/news',
+      component: require('../components/news/news')
+    },
+    {
+      path: '/qa',
+      component: require('../components/column/qa')
+    },
+    {
+      path: '/newsList',
+      component: require('../components/news/newsList')
+    },
+    {
+      path: '/connect',
+      component: require('../components/column/connect')
+    },
+    {
+      path: '/products',
+      component: require('../components/column/products')
+    },
+    {
+      path: '/productsList',
+      component: require('../components/products/productsCloumnList')
+    },
+    {
+      path: '/FilterHousing',
+      component: require('../components/products/filterHousing')
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+  }
 })
 
 export default router
